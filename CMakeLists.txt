@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.27.1)
+project(firstMakeInMyRepo C)
+set(CMAKE_C_COMPILER C://MinGW/bin/gcc)
+set(CMAKE_MAKE_PROGRAM make)
+add_executable(out main.c )
