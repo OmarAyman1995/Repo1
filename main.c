@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(void)
 {
-	printf("CREWTEQ Company!");
+	printf("this is CREWTEQ Company!");
 	return 0;
 
 }
