@@ -4,7 +4,6 @@
 4- in case of getting this message  "User installations are disabled via policy on the machine", 
    when you try to install python, please do the followings : 
    	A - Start Local Group Policy Editor - gpedit.msc
-
 	B - In the Group Policy Editor select Computer Configuration > Administrative Templates > Windows Components > Windows Installer
 	C - In the Extended Properties pane, double-click Prohibit User Installs
 	D - Click Disabled (to enable installations) or Enabled (to disable installations)
