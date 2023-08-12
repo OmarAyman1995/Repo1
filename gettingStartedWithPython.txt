@@ -1,0 +1,22 @@
+1- download python from python.org
+2- in cmd type python to make sure you have successfuly installed python on your machine. 
+3- in case of problem of running python on git bash shell, please type this     alias python='winpty python.exe'
+4- in case of getting this message  "User installations are disabled via policy on the machine", 
+   when you try to install python, please do the followings : 
+   	A - Start Local Group Policy Editor - gpedit.msc
+
+	B - In the Group Policy Editor select Computer Configuration > Administrative Templates > Windows Components > Windows Installer
+	C - In the Extended Properties pane, double-click Prohibit User Installs
+	D - Click Disabled (to enable installations) or Enabled (to disable installations)
+	E - Click OK and close the Group Policy Editor.
+5- USE VScode as an editor TO build your python projects.
+6- add Python IntelliSense extension from Vscode extesions to your environment to make coding easier.
+7- the extension of python file is .py.
+8- creat file and name it app.py and save it on a floder on your machine.
+9- open this folder using VScode.
+10- add this to app.py			print("Hello Python!")
+                       			print("*" * 10) 
+11- build the file, enter ctrl+` (` is the key before number 1 on your keyboard) to enter to the terminal.
+12- type python app.py in the terminal and press enter.
+13- cogratulations you have done your first project in python.
+
