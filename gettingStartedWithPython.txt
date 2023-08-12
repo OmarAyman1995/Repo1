@@ -19,3 +19,14 @@
 12- type python app.py in the terminal and press enter.
 13- cogratulations you have done your first project in python.
 
+
+14- add pylint extension to VsCode to auto check for error and warning . 
+15- add autopep8  extension to VsCode to for auto formatting your code . 
+16- go to prerefernces -> setting -> formatOnsave then check it to make autopep8 works automatically. 
+
+
+17- to make running code eaiser add code runner extension (this extension has a yellow label).
+18- now reload the VScode.
+19- just type cntl+alt+n to run your code. 
+
+
