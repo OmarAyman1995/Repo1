@@ -1,0 +1,4 @@
+C:/Users/Omar.Ayman/Desktop/ACCU3_Repo/secondTrySTM32/build/CMakeFiles/ACCU3.dir
+C:/Users/Omar.Ayman/Desktop/ACCU3_Repo/secondTrySTM32/build/CMakeFiles/flash.dir
+C:/Users/Omar.Ayman/Desktop/ACCU3_Repo/secondTrySTM32/build/CMakeFiles/edit_cache.dir
+C:/Users/Omar.Ayman/Desktop/ACCU3_Repo/secondTrySTM32/build/CMakeFiles/rebuild_cache.dir

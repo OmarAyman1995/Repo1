@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "armToolchainPath": "C:/devtools/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe",
+            "gdbPath": "C:/devtools/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gdb.exe",
+            "objdumpPath": "C:/devtools/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-objdumb.exe",
+            "stlinkPath": "C:/devtools/stlink-1.7.0-i686-w64-mingw32/bin/st-util.exe",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/OBD_Project.elf",
+            "name": "Debug with ST-Util",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "none",
+            "servertype": "stlink",
+            "svdFile": "C:/ST/STM32CubeIDE_1.11.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.productdb.debug_2.0.400.202211151459/resources/cmsis/STMicroelectronics_CMSIS_SVD/STM32F103.svd",
+            "showDevDebugTimestamps": true,
+            "swoConfig": {},
+            
+        }
+
+
+    ]
+}
