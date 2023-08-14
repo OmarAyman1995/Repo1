@@ -28,5 +28,6 @@
 17- to make running code eaiser add code runner extension (this extension has a yellow label).
 18- now reload the VScode.
 19- just type cntl+alt+n to run your code. 
+20- to close terminal use this statement in your code sys.exit(0);
 
 
