@@ -1,0 +1,11 @@
+build/
+*.exe
+*.bin
+*.elf
+.vscode
+.cproject
+.mxproject
+.project
+main.c
+main.h
+stm32f1xx_it.c
