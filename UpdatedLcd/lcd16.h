@@ -44,6 +44,7 @@
 // 4. MACAL MACROs
 
 
+//DATA : D7->GPIOB12   D6->GPIOB13   D5->GPIOB14   D4->GPIOB15 
 #define TUNE(data)						(((data & 0x8000)>>3) | ((data & 0x4000)>>1) | ((data & 0x2000)<<1) | ((data & 0x1000)<<3))
 
 #define LCD_PIN_HIGH(pin)   			HAL_GPIO_WritePin(GPIOA, 1<<pin, GPIO_PIN_SET)//GPIO_Set_Pin(GPIOA,pin)

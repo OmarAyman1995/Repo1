@@ -22,7 +22,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/devtools/cmake-3.27.1-windows-x86_64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake"
   "C:/devtools/cmake-3.27.1-windows-x86_64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake"
   "C:/devtools/cmake-3.27.1-windows-x86_64/share/cmake-3.27/Modules/CMakeDetermineRCCompiler.cmake"
-  "C:/devtools/cmake-3.27.1-windows-x86_64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake"
   "C:/devtools/cmake-3.27.1-windows-x86_64/share/cmake-3.27/Modules/CMakeFindBinUtils.cmake"
   "C:/devtools/cmake-3.27.1-windows-x86_64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake"
   "C:/devtools/cmake-3.27.1-windows-x86_64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake"
@@ -32,13 +31,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/devtools/cmake-3.27.1-windows-x86_64/share/cmake-3.27/Modules/CMakeParseLibraryArchitecture.cmake"
   "C:/devtools/cmake-3.27.1-windows-x86_64/share/cmake-3.27/Modules/CMakeRCCompiler.cmake.in"
   "C:/devtools/cmake-3.27.1-windows-x86_64/share/cmake-3.27/Modules/CMakeRCInformation.cmake"
-  "C:/devtools/cmake-3.27.1-windows-x86_64/share/cmake-3.27/Modules/CMakeSystem.cmake.in"
   "C:/devtools/cmake-3.27.1-windows-x86_64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake"
   "C:/devtools/cmake-3.27.1-windows-x86_64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake"
   "C:/devtools/cmake-3.27.1-windows-x86_64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake"
   "C:/devtools/cmake-3.27.1-windows-x86_64/share/cmake-3.27/Modules/CMakeTestCompilerCommon.cmake"
   "C:/devtools/cmake-3.27.1-windows-x86_64/share/cmake-3.27/Modules/CMakeTestRCCompiler.cmake"
-  "C:/devtools/cmake-3.27.1-windows-x86_64/share/cmake-3.27/Modules/CMakeUnixFindMake.cmake"
   "C:/devtools/cmake-3.27.1-windows-x86_64/share/cmake-3.27/Modules/Compiler/ADSP-DetermineCompiler.cmake"
   "C:/devtools/cmake-3.27.1-windows-x86_64/share/cmake-3.27/Modules/Compiler/ARMCC-DetermineCompiler.cmake"
   "C:/devtools/cmake-3.27.1-windows-x86_64/share/cmake-3.27/Modules/Compiler/ARMClang-DetermineCompiler.cmake"
@@ -100,7 +97,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/3.27.1/CMakeSystem.cmake"
   "CMakeFiles/3.27.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.27.1/CMakeRCCompiler.cmake"
   "CMakeFiles/3.27.1/CMakeCCompiler.cmake"
