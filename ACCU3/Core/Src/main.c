@@ -95,8 +95,13 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_ADC1_Init();
-  MX_CAN_Init();
+  //MX_CAN_Init();
   MX_USART1_UART_Init();
+
+  HAL_UART_Transmit(&huart1, "CREWTEQ\r\n", 10, 10);
+ 	  HAL_Delay(300);
+
+
   /* USER CODE BEGIN 2 */
   lcdConfig_t lcdConfigX;
   lcdConfigX.s8Dots = LCD_40DOTS;
@@ -105,21 +110,14 @@ int main(void)
   lcdInit(&lcdConfigX);
   lcdSendCommand(LCD_CURS_OFF_COMMAND | LCD_BLINK_OFF_COMMAND | LCD_DATA_ON_COMMAND);
   lcdWriteString((const s8_t*)"C.R.E.W T.E.Q");
-  HAL_Delay(1000);
+  HAL_Delay(200);
   lcdSendCommand(LCD_CLR_COMMAND);
-  HAL_Delay(1000);
+  HAL_Delay(300);
   lcdWriteString((const s8_t*)"ACCU3 Project");
-  HAL_Delay(1000);
+  HAL_Delay(200);
   lcdSendCommand(LCD_CLR_COMMAND);
-  HAL_Delay(1000);
-  s8_t LOC_s8Counter = '1';
-  for(;LOC_s8Counter<'9';LOC_s8Counter++)
-  {
-    lcdWriteChar(LOC_s8Counter);
-    HAL_Delay(500);
-  }
+  HAL_Delay(200);
 
-  
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -277,7 +275,7 @@ static void MX_USART1_UART_Init(void)
 
   /* USER CODE END USART1_Init 1 */
   huart1.Instance = USART1;
-  huart1.Init.BaudRate = 115200;
+  huart1.Init.BaudRate = 9600;
   huart1.Init.WordLength = UART_WORDLENGTH_8B;
   huart1.Init.StopBits = UART_STOPBITS_1;
   huart1.Init.Parity = UART_PARITY_NONE;
@@ -370,7 +368,7 @@ static void MX_GPIO_Init(void)
   * @param  htim : TIM handle
   * @retval None
   */
-void HAL_TIM_PeriodElapsedCallback( TIM_HandleTypeDef *htim)
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
   /* USER CODE BEGIN Callback 0 */
 
