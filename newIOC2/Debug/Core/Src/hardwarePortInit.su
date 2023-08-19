@@ -1,0 +1,5 @@
+../Core/Src/hardwarePortInit.c:17:14:enumSystemInit	16	static
+../Core/Src/hardwarePortInit.c:31:6:init2	8	static
+../Core/Src/hardwarePortInit.c:45:13:MX_GPIO_Init	40	static
+../Core/Src/hardwarePortInit.c:110:14:MX_ADC1_Init	24	static
+../Core/Src/hardwarePortInit.c:157:7:MX_USART1_UART_Init	8	static
