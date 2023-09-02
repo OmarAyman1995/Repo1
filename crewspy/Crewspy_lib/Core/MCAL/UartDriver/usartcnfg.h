@@ -1,0 +1,92 @@
+#ifndef USARTCNFG_H
+#define USARTCNFG_H
+
+#include <stdint.h>
+
+
+/**-------------------   USART CHANNELS   ------------------------**/
+#define USART1		                            ((volatile USART_t *) 0x40013800)
+#define USART2                                  ((volatile USART_t *) 0x40004400)
+#define USART3                                  ((volatile USART_t *) 0x40004800)  
+
+/**-------------------   USART Register Definition    ------------**/
+
+typedef struct
+{
+	volatile uint32_t SR;
+	volatile uint32_t DR;
+	volatile uint32_t BRR;
+	volatile uint32_t CR1;
+	volatile uint32_t CR2;
+	volatile uint32_t CR3;
+	volatile uint32_t GTPR;
+}USART_t;
+
+/*USART SR Register BITS Definition*/
+enum USART_SR_REG {
+    USART_SR_REG_BIT0_PE,
+    USART_SR_REG_BIT1_FE,
+    USART_SR_REG_BIT2_NE,
+    USART_SR_REG_BIT3_ORE,
+    USART_SR_REG_BIT4_IDLE,
+    USART_SR_REG_BIT5_RXNE,
+    USART_SR_REG_BIT6_TC,
+    USART_SR_REG_BIT7_TXE,
+    USART_SR_REG_BIT8_LBD,
+    USART_SR_REG_BIT9_CTS  
+};
+/*USART CR1 Register BITS Definition*/
+enum USART_CR1_REG {
+    USART_CR1_REG_BIT0_SBK,
+    USART_CR1_REG_BIT1_RWU,
+    USART_CR1_REG_BIT2_RE,
+    USART_CR1_REG_BIT3_TE,
+    USART_CR1_REG_BIT4_IDLEIE,
+    USART_CR1_REG_BIT5_RXNEIE,
+    USART_CR1_REG_BIT6_TCIE,
+    USART_CR1_REG_BIT7_TXEIE,
+    USART_CR1_REG_BIT8_PEIE,
+    USART_CR1_REG_BIT9_PS,
+    USART_CR1_REG_BIT10_PCE, 
+    USART_CR1_REG_BIT11_WAKE,
+    USART_CR1_REG_BIT12_M,
+    USART_CR1_REG_BIT13_UE
+ 
+};
+
+/*USART CR2 Register BITS Definition*/
+enum USART_CR2_REG {
+    USART_CR2_REG_BIT0_ADD,
+    USART_CR2_REG_BIT1_ADD,
+    USART_CR2_REG_BIT2_ADD,
+    USART_CR2_REG_BIT3_ADD,
+    USART_CR2_REG_BIT4_RESERVED,
+    USART_CR2_REG_BIT5_LBDL,
+    USART_CR2_REG_BIT6_LBDIE,
+    USART_CR2_REG_BIT7_RESERVED,
+    USART_CR2_REG_BIT8_LBCL,
+    USART_CR2_REG_BIT9_CPHA,
+    USART_CR2_REG_BIT10_CPOL, 
+    USART_CR2_REG_BIT11_CLKEN,
+    USART_CR2_REG_BIT12_STOP,
+    USART_CR2_REG_BIT13_STOP,
+    USART_CR2_REG_BIT14_LINEN
+ 
+};
+
+/*USART CR3 Register BITS Definition */
+enum USART_CR3_REG {
+    USART_CR3_REG_BIT0_EIE,
+    USART_CR3_REG_BIT1_IREN,
+    USART_CR3_REG_BIT2_IRLP,
+    USART_CR3_REG_BIT3_HDSEL,
+    USART_CR3_REG_BIT4_NACK,
+    USART_CR3_REG_BIT5_SCEN,
+    USART_CR3_REG_BIT6_DMAR,
+    USART_CR3_REG_BIT7_DMAT,
+    USART_CR3_REG_BIT8_RTSE,
+    USART_CR3_REG_BIT9_CTSE,
+    USART_CR3_REG_BIT10_CTSIE
+};
+
+#endif
