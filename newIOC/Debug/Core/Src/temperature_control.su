@@ -1,0 +1,4 @@
+../Core/Src/temperature_control.c:5:15:s64_GetTemperatureFromLcd	4	static
+../Core/Src/temperature_control.c:10:29:enum_SetTemperatureOnLcd	24	static
+../Core/Src/temperature_control.c:32:14:vid_UpdateLcdAfterTempControl	8	static
+../Core/Src/temperature_control.c:50:21:temperatureHandle	16	static

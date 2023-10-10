@@ -30,4 +30,16 @@
 19- just type cntl+alt+n to run your code. 
 20- to close terminal use this statement in your code sys.exit(0);
 
+21- use input function to take input from user 
+	for exa: 
+	Mygender = input("what is your gender? ")
+   print("My gender is " + Mygender)
+
+22- to convert string to int use (int) function
+	 for exa:
+	 myYear = int("1989")
+23- and float to convert string to float 
+	,str to convert a value to string,
+	 bool to convert string to bool
+
 

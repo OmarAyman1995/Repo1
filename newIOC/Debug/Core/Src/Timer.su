@@ -1,0 +1,2 @@
+../Core/Src/Timer.c:4:6:vid_systickTimerInit	8	static
+../Core/Src/Timer.c:11:6:SysTick_Handler	8	static

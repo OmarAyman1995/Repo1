@@ -1,0 +1,24 @@
+1- install Clang for windows from the official site  https://github.com/llvm/llvm-project/releases/tag/llvmorg-15.0.7
+	the version I have installed at the time I have saved this text is 15.0.7.
+
+2- install the clang-format VS-code extension.
+
+3- make sure that you have successfuly installed LLVM/Clang through opening cmd/bash or any shell
+   and type  " clang-format.exe --version " ,
+   you should see the version you have already installed on your machine, otherwise you may did not install clang successfuly or the (.bin/cmake-format.exe) is not added to system paths.  
+
+4- EDIT setting.json by adding this line : "clang-format.executable": "C:/Program Files/LLVM/bin/clang-format.exe"
+	note that the previous direction is on my machine, pls make sure of typing you correct path.
+	you may use this command in your shell " where clang-format.exe  " if you want to know where is the exactly installed location. 
+
+5- go to setting of VS-code then in ( clang-format fallback style for C, type 'GNU') 
+
+
+6- go to setting of VS-code then in (Clang-format: Fallback Style , type 'GNU')
+
+
+7- to create your custome use : clang-format.exe -style=gnu -dump-config > .clang-format then edit it as required.
+
+
+8- to create your custome configuration  you can also use clang format configurator from link : 
+   https://clangpowertools.com/clang-format-editor.html

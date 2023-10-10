@@ -60,8 +60,8 @@ all: main-build
 main-build: ToggelingLed.elf secondary-outputs
 
 # Tool invocations
-ToggelingLed.elf ToggelingLed.map: $(OBJS) $(USER_OBJS) C:\Users\Omar.Ayman\Desktop\STMCUBEMX\ToggelingLed\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "ToggelingLed.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Omar.Ayman\Desktop\STMCUBEMX\ToggelingLed\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ToggelingLed.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+ToggelingLed.elf ToggelingLed.map: $(OBJS) $(USER_OBJS) C:\Users\OMAR\Desktop\newRepo\ToggelingLed\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "ToggelingLed.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\OMAR\Desktop\newRepo\ToggelingLed\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ToggelingLed.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

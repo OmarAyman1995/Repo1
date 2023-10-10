@@ -5649,7 +5649,7 @@ uint32_t HAL_TIM_ReadCapturedValue(const TIM_HandleTypeDef *htim, uint32_t Chann
   * @param  htim TIM handle
   * @retval None
   */
-__weak void HAL_TIM_PeriodElapsedCallback( TIM_HandleTypeDef *htim)
+__weak void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
   /* Prevent unused argument(s) compilation warning */
   UNUSED(htim);

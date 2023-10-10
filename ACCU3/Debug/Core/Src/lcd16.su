@@ -1,0 +1,7 @@
+../Core/Src/lcd16.c:18:15:lcd_ENABLE_R_W_DATA	16	static
+../Core/Src/lcd16.c:26:15:lcd_start4Bit	8	static
+../Core/Src/lcd16.c:33:6:lcdInit	24	static
+../Core/Src/lcd16.c:93:6:lcdSendCommand	16	static
+../Core/Src/lcd16.c:99:6:lcdWriteChar	16	static
+../Core/Src/lcd16.c:105:6:lcdWriteSpecialChar	24	static
+../Core/Src/lcd16.c:129:6:lcdWriteString	24	static

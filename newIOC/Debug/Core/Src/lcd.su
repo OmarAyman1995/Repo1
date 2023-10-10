@@ -1,0 +1,7 @@
+../Core/Src/lcd.c:10:14:vid_lcdEnableRwData	16	static
+../Core/Src/lcd.c:18:14:vid_lcdStart4Bit	8	static
+../Core/Src/lcd.c:25:13:enum_lcdInit	24	static
+../Core/Src/lcd.c:94:13:enum_lcdSendCommand	24	static
+../Core/Src/lcd.c:125:13:enum_lcdWriteChar	24	static
+../Core/Src/lcd.c:143:13:enum_lcdWriteString	24	static
+../Core/Src/lcd.c:163:13:enum_lcdSetCursorPosition	24	static
