@@ -1,31 +1,26 @@
 {
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
     "configurations": [
         {
-            "name": "C/C++: gcc.exe build and debug active file",
-            "type": "cppdbg",
+            "armToolchainPath": "C:/devtools/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe",
+            "gdbPath": "C:/devtools/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gdb.exe",
+            "objdumpPath": "C:/devtools/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-objdumb.exe",
+            "stlinkPath": "C:/devtools/stlink-1.7.0-i686-w64-mingw32/bin/st-util.exe",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/crewspy.elf",
+            "name": "Debug with ST-Util",
             "request": "launch",
-            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                },
-                {
-                    "description": "Set Disassembly Flavor to Intel",
-                    "text": "-gdb-set disassembly-flavor intel",
-                    "ignoreFailures": true
-                }
-            ],
-            "preLaunchTask": "C/C++: gcc.exe build active file"
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "none",
+            "servertype": "stlink",
+            "svdFile": "C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.productdb.debug_2.0.400.202211151459/resources/cmsis/STMicroelectronics_CMSIS_SVD/STM32F103.svd",
+            "showDevDebugTimestamps": true,
+            "swoConfig": {},
+            
         }
-    ],
-    "version": "2.0.0"
+    ]
 }
