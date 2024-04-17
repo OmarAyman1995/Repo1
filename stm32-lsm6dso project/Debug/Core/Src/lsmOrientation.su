@@ -1,0 +1,6 @@
+../Core/Src/lsmOrientation.c:129:6:lsm6dso_orientation	48	static
+../Core/Src/lsmOrientation.c:229:10:platform_write	40	static
+../Core/Src/lsmOrientation.c:256:10:platform_read	40	static
+../Core/Src/lsmOrientation.c:281:7:tx_com	16	static
+../Core/Src/lsmOrientation.c:298:7:platform_delay	16	static
+../Core/Src/lsmOrientation.c:310:7:platform_init	4	static
