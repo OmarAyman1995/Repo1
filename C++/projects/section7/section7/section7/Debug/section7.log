@@ -1,0 +1,4 @@
+﻿  section7.cpp
+c:\users\omar.ayman\desktop\c++\projects\section7\section7\section7\section7.cpp(134): warning C4018: '<': signed/unsigned mismatch
+c:\users\omar.ayman\desktop\c++\projects\section7\section7\section7\section7.cpp(136): warning C4018: '<': signed/unsigned mismatch
+  section7.vcxproj -> C:\Users\omar.ayman\Desktop\C++\projects\section7\section7\Debug\section7.exe
