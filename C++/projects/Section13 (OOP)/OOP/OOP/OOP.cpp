@@ -12,9 +12,27 @@
 #include <string>
 #include <vector>
 
-using std::cin; // use only what you need in the std name space 
-using std::cout;// use only what you need in the std name space 
-using std::endl;// use only what you need in the std name space 
+using namespace std;
+
+
+class Player
+{
+public:
+	// attributes 
+	string name; 
+	int health;
+	int experience;
+
+	//methods
+	void talk(string textToSay);
+	bool isDead();
+
+	//constructor 
+	Player(string name, int health, int experience);
+
+	// distructor 
+	~Player();
+};
 
 int main()
 {
@@ -43,6 +61,52 @@ int main()
 	   
 	  * the object is an instance from the class
 
-	   
+	   === creating classes 
+	   class ClassNew
+		{
+		//attributes 
+			std::string name; 
+			int age ; 
+			int salary 
+
+		//methods 
+			bool SalIsEnough(int sal);
+		};
+
+		//creating object 
+		ClassNew ClassNew1 ;
+
+
+
 	   */
+
+	Player frank("frank", 4, 10);
+	Player hero("hero", 2, 3);
+
+	Player* enemy{ nullptr };
+	enemy = new Player("another person", 7, 8);
+	delete enemy;
+
+	frank.talk(frank.name);
+
+	/*
+		privates are not accessible outside the class !
+	*/
+}
+
+void Player::talk(string textToSay)
+{
+	cout << name << " says " << textToSay << endl;
+}
+
+Player::Player(string name, int health, int experience)
+{
+	this->name = name;
+	this->experience = experience;
+	this->health = health;
+
+}
+
+Player::~Player()
+{
 }
