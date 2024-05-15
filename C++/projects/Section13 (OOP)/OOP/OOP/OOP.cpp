@@ -11,6 +11,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "student.h"
 
 using namespace std;
 
@@ -80,18 +81,28 @@ int main()
 
 	   */
 
-	Player frank("frank", 4, 10);
+	/*Player frank("frank", 4, 10);
 	Player hero("hero", 2, 3);
 
 	Player* enemy{ nullptr };
 	enemy = new Player("another person", 7, 8);
 	delete enemy;
 
-	frank.talk(frank.name);
+	frank.talk(frank.name);*/
+	
+	
 
 	/*
 		privates are not accessible outside the class !
 	*/
+
+
+
+	student stud1("Omar", 3.44);
+	cout << "Name : " << stud1.getStudentName() << endl << "GPA : " << stud1.getGPA() << endl;
+
+	stud1.setGPA(3.55);
+	cout << "Name : " << stud1.getStudentName() << endl << "GPA : " << stud1.getGPA() << endl;
 }
 
 void Player::talk(string textToSay)
