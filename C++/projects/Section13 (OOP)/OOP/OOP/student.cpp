@@ -1,5 +1,6 @@
 #include "student.h"
-
+#include <iostream>
+using namespace std;
 bool student::IsStudentPassed(double GPA)
 {
 	if (this->GPA > 2.0)
@@ -31,11 +32,38 @@ void student::setStudentName(std::string nameOfStudent)
 }
 
 student::student(std::string Name, double currentGPA)
+	:student{Name}
 {
-	this->nameOfStudent = Name;
 	this->GPA = currentGPA;
+}
+
+student::student(std::string Name)
+	:nameOfStudent{Name}
+{
+	
+}
+
+student::student(double currentGPA)
+{
+	this->GPA = currentGPA;
+}
+
+student::student()
+	:nameOfStudent{ "None" }, GPA{ 3.00 }
+{
+
+}
+
+
+student::student(const student &source)
+{
+	this->nameOfStudent = source.nameOfStudent;
+	this->GPA = source.GPA;
+	
 }
 
 student::~student()
 {
+	cout <<endl << "distructor of " << this->nameOfStudent << " is called here ! " << endl;
 }
+

@@ -19,8 +19,14 @@ public:
 	void setStudentName(std::string nameOfStudent);
 
 
-	//constructor 
+	//constructors (overloaded)
 	student(std::string Name,double currentGPA);
+	student(std::string Name);
+	student(double currentGPA);
+	student();
+
+	// copy constructor 
+	student(const student &source);
 
 	//Distructor
 	~student();
