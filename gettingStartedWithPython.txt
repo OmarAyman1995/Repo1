@@ -1,7 +1,7 @@
 1- download python from python.org
 2- in cmd type python to make sure you have successfuly installed python on your machine. 
 3- in case of problem of running python on git bash shell, please type this     alias python='winpty python.exe'
-4- in case of getting this message  "User installations are disabled via policy on the machine", 
+- in case of getting this message  "User installations are disabled via policy on the machine", 
    when you try to install python, please do the followings : 
    	A - Start Local Group Policy Editor - gpedit.msc
 	B - In the Group Policy Editor select Computer Configuration > Administrative Templates > Windows Components > Windows Installer
@@ -41,5 +41,10 @@
 23- and float to convert string to float 
 	,str to convert a value to string,
 	 bool to convert string to bool
+
+
+
+
+
 
 

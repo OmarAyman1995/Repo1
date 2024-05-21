@@ -1,3 +1,5 @@
+https://github.com/GBert/misc/tree/master/stm32-slcan
+
 sudo modprobe can
 sudo modprobe can-raw
 sudo modprobe slcan
