@@ -2,3 +2,5 @@ https://rahul4u.medium.com/communication-services-comstack-in-autosar-8e7926fe38
 
 https://github.com/normaldotcom/cangaroo/
 sudo apt-get install libnl-3-dev libnl-genl-3-dev
+
+dpkg -l | grep libnl-3-dev
