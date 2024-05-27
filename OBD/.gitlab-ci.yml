@@ -1,0 +1,152 @@
+# Define stages of the pipeline
+stages: 
+  - build             # Compile the code
+  - static_analysis   # Run static testing and analyze code quality
+  - unit_tests        # Run unit tests
+  - deploy_test       # run deploy test on the remote setup
+#--------------------------------------------------------------------------------------------
+
+# Define variables for tool paths
+variables:
+  PYTHON_PATH: "/usr/bin/python3"
+  CODE_BINARY: "OBD_Project.bin"
+
+
+#--------------------------------------------------------------------------------------------
+
+# Prepare the environment before running jobs
+before_script:
+    - echo "before start ..."
+#--------------------------------------------------------------------------------------------
+
+#Define list of the default variables for all jobs
+default:
+    tags:
+      - Compilation-Runner-1
+#--------------------------------------------------------------------------------------------
+
+
+# Stage 1: Build the software
+    
+build-job:
+  stage: build
+  variables:
+    CMAKE_PATH: "/CrewDevEnv/CMAKE/v3.26.2/bin/cmake"
+    CODE_ELF: "OBD_Project.elf"
+    CODE_MAP_FILE: "OBD_Project.map"
+    RAM_MEMORY_LIMIT: "80"
+    FLASH_MEMORY_LIMIT: "100"
+
+  script:
+    - $PYTHON_PATH CI_Scripts/build.py $CMAKE_PATH $RAM_MEMORY_LIMIT $FLASH_MEMORY_LIMIT    # python script that executes Make All and performes Quality Gating
+
+  artifacts:
+    paths:
+      - $CODE_BINARY  # Code binary file path
+      - $CODE_MAP_FILE
+      - $CODE_ELF
+#--------------------------------------------------------------------------------------------
+    
+# Stage 2: Perform static testing 
+Linting-Job:
+  stage: static_analysis
+  variables:
+    CPPCHECK_PATH: "/CrewDevEnv/Static_Testing_Tools/Cppcheck/v1.90/cppcheck"
+    CPPCHECK_REPORT: "cppcheck_report.csv" 
+    Linting_Limit: "700"
+
+  script:
+    # Generate the header row with descriptions
+    - $PYTHON_PATH CI_Scripts/LintingCheck.py $CPPCHECK_PATH $Linting_Limit 
+  artifacts:
+    paths:
+      - $CPPCHECK_REPORT
+    when: always
+#--------------------------------------------------------------------------------------------
+
+# Stage 2: Perform static testing 
+MISRA-Check-Job:
+  stage: static_analysis
+  variables:
+    CPPCHECK_PATH: "/CrewDevEnv/Static_Testing_Tools/Cppcheck/v1.90/cppcheck"
+    CCPCHECK_MISRA_REPORT: "cppcheck_misra.csv"
+    Misra_Limit: "700"
+
+  script:
+    - $PYTHON_PATH CI_Scripts/LintingCheck.py $CPPCHECK_PATH $Misra_Limit
+  artifacts:
+    paths:
+      - $CCPCHECK_MISRA_REPORT
+    when: always
+#--------------------------------------------------------------------------------------------
+
+# Stage 2: Perform static testing 
+Code-Count-Job:
+  stage: static_analysis
+  variables:
+    CLOC_PATH: "/CrewDevEnv/Static_Testing_Tools/Cloc/v1.82/cloc"
+    CODE_COUNT_REPORT: "cloc_report.csv"
+    Code_Count_Limit: "700"
+
+  script:
+    - $PYTHON_PATH CI_Scripts/CodeCount.py $CLOC_PATH $Code_Count_Limit 
+  artifacts:
+    paths:
+      - $CODE_COUNT_REPORT
+    when: always
+
+
+# Stage 2: Perform static testing 
+Doxygen-Job:
+  stage: static_analysis
+  variables:
+    DOXYGEN_PATH: "/CrewDevEnv/Static_Testing_Tools/Doxygen/v1.8.17/doxygen"
+    DOXYGEN_HTML_OUTPUT: "html"
+    DOXYGEN_LATEX_OUTPUT: "latex"
+
+  script:
+    - $DOXYGEN_PATH
+
+  artifacts:
+    paths:
+      - $DOXYGEN_HTML_OUTPUT
+      - $DOXYGEN_LATEX_OUTPUT
+#--------------------------------------------------------------------------------------------
+
+# Stage 3: Perform unit testing
+UnitTesting-CodeCoverage-job:
+  stage: unit_tests
+
+  variables:
+    GcovReport: "GcovReport.txt"
+    JunitReport: "JunitsReport.xml"
+    JunitQualityLimit: 50
+    GcovQualityLimit: 20
+
+  script:
+    - echo "Running unit tests ..."
+    - $PYTHON_PATH CI_Scripts/UnitTest.py $JunitQualityLimit $GcovQualityLimit
+  
+  artifacts:
+    paths:
+      - $GcovReport
+      - $JunitReport
+    when: always
+    reports:
+      junit: $JunitReport
+
+
+deploy_test:
+  stage: deploy_test
+  tags:
+    - Compilation-RaspberryPI4
+  script:
+    - sudo scp $CODE_BINARY /crewteq-build/TestingScript/
+    - sudo rfcomm bind rfcomm0 00:22:06:01:91:58
+    - python3.10 CI_Scripts/CD_Script.py | tee ./CD_LOG.txt
+    - sudo rfcomm release 0
+  artifacts:
+
+    paths:
+      - ./CD_LOG.txt
+    when: always

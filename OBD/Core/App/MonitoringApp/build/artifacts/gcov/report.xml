@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<testsuites tests="22" failures="0" time="0.221">
+  <testsuite name="test_MonitoringApp" tests="22" failures="0" skipped="0" errors="0" time="0.221">
+    <testcase name="test_CCO_TC_UT_0040" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0041" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0042" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0043" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0044" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0045" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0046" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0047" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0048" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0049" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0052" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0053" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0054" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0055" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0056" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0057" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0058" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0059" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0060" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0061" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0062" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0063" time="0.000"/>
+  </testsuite>
+</testsuites>

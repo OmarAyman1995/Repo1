@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<testsuites tests="15" failures="0" time="0.138">
+  <testsuite name="test_BuzzerDriver" tests="15" failures="0" skipped="0" errors="0" time="0.138">
+    <testcase name="test_CCO_TC_UT_0170" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0137" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0138" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0139" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0140" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0141" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0148" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0149" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0150" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0153" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0154" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0155" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0157" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0158" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_0160" time="0.000"/>
+  </testsuite>
+</testsuites>

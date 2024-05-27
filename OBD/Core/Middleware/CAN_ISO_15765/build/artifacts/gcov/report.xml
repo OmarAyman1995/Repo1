@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<testsuites tests="13" failures="0" time="0.297">
+  <testsuite name="test_CAN_ISO_15765" tests="13" failures="0" skipped="0" errors="0" time="0.297">
+    <testcase name="test_CCO_TC_UT_1300" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1301" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1302" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1303" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1304" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1305" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1306" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1307" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1308" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1311" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1312" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1313" time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1314" time="0.000"/>
+  </testsuite>
+</testsuites>

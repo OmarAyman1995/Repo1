@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<testsuites tests="28" failures="0" time="0.170">
+  <testsuite name="test_UDSHandler" tests="28" failures="0" skipped="0" errors="0" time="0.170">
+    <testcase name="test_CCO_TC_UT_1450 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1451 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1452 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1453 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1454 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1455 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1456 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1457 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1458 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1459 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1460 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1461 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1462 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1463 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1464 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1465 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1466 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1467 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1468 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1469 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1470 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1471 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1472 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1473 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1474 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1475 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1476 " time="0.000"/>
+    <testcase name="test_CCO_TC_UT_1477 " time="0.000"/>
+  </testsuite>
+</testsuites>
