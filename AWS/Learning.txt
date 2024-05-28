@@ -1,0 +1,6 @@
+https://docs.aws.amazon.com/iot/latest/developerguide/iot-sdks.html
+
+https://www.geeksforgeeks.org/basics-computer-networking/
+
+https://www.google.com/search?sca_esv=792c36b2414f597c&sca_upv=1&q=network+basics&uds=ADvngMj53AHIJt2KifqzVbYVXLyJa2vSOMl4Y6Zv-bgFIal645Bh-n4tYfgkqVTYmog87ZPZVEXyBeZ0xXAxcx05lvPfY2H-kyipEgKOtY_-k6Rwj_0F9rRuSckMPZ0UO2MDDNLgSOWBafa0ATm2PEpgZhcrGc95CHkE96-qgmhOHtkCVfxAodLyIJa2wmIrwftH6fOZNpZoAq3lULC4NX1FQDijmARvt5drq7ReYlUuon7d4UAMRW26taxXcsKXgpjCH02Jp_f8Tk91z2lsOB4mrTrVjwSBShGGuKsRLeXnAmlBGhMvOVjYwNEEJLS3C3ptjG580HkM&udm=2&prmd=ivnsbmtz&sa=X&ved=2ahUKEwiF_uOHzbCGAxUnVkEAHbpPDIMQtKgLegQIFBAB&biw=1536&b
+ih=738&dpr=1.25#vhid=gBiI_NvZTHGeTM&vssid=mosaic
