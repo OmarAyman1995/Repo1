@@ -1,0 +1,114 @@
+the seven layers of network (the OSI Model) 
+
+1- Application
+2- presentation (convert data to undestandable,data compression, data encryption)
+3- session 
+
+4- Transport  (does three things) (segmentation, flow control , error control)
+5- Network (logical addressing , routing )
+
+
+6- Data Link (Provides node-to-node data transfer)
+			The Data-Link Layer has two sublayers:
+
+			- The first is the “medium access control,” which uses the MAC addresses from the network devices
+			  to transmit data between them.
+			
+			- The second layer is the “logical link layer,” which identifies, checks flow control,
+			  and performs the error check for the transmitted data.
+
+7- physical  (transmission and reception of raw binary data over a communication medium:
+              Cables, fiber optics, wireless transmission)
+
+              The Physical layer defines the interface and mechanism for putting data bits on a network medium
+              (cable, radio, or light). 
+
+
+
+
+	what do we mean by topic in IOT or web servers ?
+		Definition: A topic is a string that represents a channel or a category to which messages are published.
+		Topics often have a hierarchical structure, which helps in organizing and filtering messages.
+		
+		Example: Consider a smart home setup. Topics might look like this:
+		
+		1- home/livingroom/temperature
+		2- home/kitchen/humidity
+		3- home/garage/doorstatus
+
+
+
+
+what is message broker in AWS IOT core? 
+
+1- In AWS IoT Core, the message broker is a key component that enables secure and efficient communication
+  between IoT devices and the cloud.
+2- The message broker routes messages from publishers (devices that send data)
+  to subscribers (devices or services that receive data) based on topic subscriptions.
+
+3- Practical Use Cases
+	A- Real-time Data Processing:
+	Devices send telemetry data (e.g., temperature readings) to the message broker, which then routes this data to backend services for real-time processing and analysis.
+
+	B- Command and Control:
+	Applications can send commands to devices via the message broker.
+	For example, a smart home app can send a command to a thermostat to adjust the temperature.
+
+	C- Device-to-Device Communication:
+	Devices can communicate with each other indirectly through the message broker by publishing and subscribing
+	to common topics.
+	For example, sensors can send data to actuators via the broker.
+
+
+
+what is the endpoint in AWS CORE IOT?
+
+	The AWS IoT Core endpoint is a unique URL that acts as the entry point for IoT devices to communicate with AWS IoT Core.
+	This endpoint allows devices to connect to the AWS IoT Core service and interact with the message broker,
+	which facilitates the exchange of messages between devices and the cloud.
+	
+	Example Endpoint
+	A typical endpoint URL might look like: a1b2c3d4e5f6g7-ats.iot.us-west-2.amazonaws.com
+	a1b2c3d4e5f6g7-ats (address of broker)
+	a1b2c3d4e5f6g7 (mangment)
+	This URL includes:
+	1- Account-specific identifier: a1b2c3d4e5f6g7
+	2- Type of endpoint: -ats (signifies that it uses Amazon Trust Services)
+	3- Service and region: iot.us-west-2.amazonaws.com
+
+Authentication Vs Authorization 
+
+	- Authentication is the process of verifying the identity of a device or user.
+	  It ensures that the entity trying to connect to AWS IoT Core is who it claims to be
+	
+	- Authorization is the process of determining what actions an authenticated device or user
+	  is allowed to perform. It ensures that the entity has the necessary permissions to perform the requested actions.
+
+	** Detailed Example
+	Device A (Temperature Sensor):
+
+	Authentication: Device A connects to AWS IoT Core using its X.509 certificate.
+	AWS IoT Core verifies this certificate against its trusted CAs.
+	
+	Authorization: After successful authentication, AWS IoT Core checks the attached policy
+	to determine if Device A is allowed to publish messages to the topic home/temperature/livingroom.
+
+
+
+Filters are a way to subscribe to multiple topics in a single request.
+
+
+Outgoing publishes are the MQTT messages that a client sends to the broker.
+These messages are published to specific topics, and the broker then distributes these messages to any clients subscribed to those topics.
+
+Incoming publishes are the MQTT messages that a client receives from the broker.
+These messages are sent by the broker to the client because the client has subscribed to the topics on which these messages were published.
+
+
+MQTT VS MQTT over WebSockets
+
+what is TLS/SSL ? 
+
+what do we mean by port in network layer ? 
+
+what is the TCP/IP connection?
