@@ -61,6 +61,39 @@ private:
 protected:
 };
 
+
+class shape
+{
+public : 
+	// attrinbutes 
+	
+	// methods
+	shape();
+	virtual ~shape();
+	virtual double getArea(void) = 0;
+	virtual void draw(void) = 0;
+
+private:
+protected:
+};
+
+class circle : public shape
+{
+public:
+	
+	// methods
+	circle() :raduis{ 0.0 } { std::cout << "this is the constructor of circle class without args !" << std::endl; };
+	circle(double r) :raduis{ r } { std::cout << "this is the constructor of circle class !" << std::endl; }
+	~circle() { std::cout << "this is the destructor of circle class !" << std::endl; }
+
+	virtual double getArea(void) override;
+	virtual void draw(void) override;
+
+private:
+	// attrinbutes 
+	double raduis;
+protected:
+};
 int main()
 {
 	/*
@@ -73,15 +106,38 @@ int main()
 
 		abstract classes : are classes we are not able to instintiate objects from them 
 		, they are contains at least one pure virtual function!
+		on the other hand the classes we are able to  instintiate objects from them are called Concrete classes 
+
+
 	*/
+	//shape s1(); this gives an error because we can NOT instintiate object from the abstract class
+	
+	circle c1(3.0);
+	std::cout << "area of circle of c1 : " << c1.getArea() << std::endl ;
+	c1.draw();
+	
 	
 
-	MCU* mcu1 = new PIC16F();
-	mcu1->showMyNameClass();
-
-	delete mcu1;
-
+	shape* c2 = new circle(4.3);
+	c2->getArea();
+	std::cout << "area of circle of c2 : " << c2->getArea() << std::endl;
+	c2->draw();
+	delete c2;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 MCU::MCU(int RAMsizeInkb)
 	:RAMsizeInkb{ 10 }, FLASHsizeInKb{ 32 }
@@ -179,4 +235,26 @@ void PIC16F::setEUSARTmodule(bool EUSART)
 void PIC16F::showMyNameClass(void)
 {
 	std::cout << "this is the PIC16F Class ! " << std::endl;
+}
+
+shape::shape()
+{
+	std::cout << "this is the constructor of shape class !" << std::endl;
+}
+
+shape::~shape()
+{
+	std::cout << "this is the destructor of shape class !" << std::endl;
+}
+
+double circle::getArea(void)
+{
+	double area = 0.0; 
+	area = this->raduis * this->raduis * 3.14159;
+	return area;
+}
+
+void circle::draw(void)
+{
+	std::cout << "this is the draw method of CIRCLE !" << std::endl;
 }
