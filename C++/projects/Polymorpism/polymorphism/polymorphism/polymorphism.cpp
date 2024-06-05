@@ -108,6 +108,8 @@ int main()
 		, they are contains at least one pure virtual function!
 		on the other hand the classes we are able to  instintiate objects from them are called Concrete classes 
 
+		friend functions are not inherited !
+
 
 	*/
 	//shape s1(); this gives an error because we can NOT instintiate object from the abstract class
