@@ -66,7 +66,6 @@ class shape
 {
 public : 
 	// attrinbutes 
-	
 	// methods
 	shape();
 	virtual ~shape();
